@@ -1,0 +1,22 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "dat",
+  "scopeName": "source.dat",
+  "patterns": [
+    {
+      "match": "^\\s*([A-Z_\\-]+)\\b(?![^=]*=)",
+      "captures": {
+        "1": { "name": "meta.header.dat" }
+      },
+      "name": "keyword.control.dat"
+    },
+    {
+      "match": "^\\s*([A-Z_\\-]+)\\s*=\\s*(.*)$",
+      "captures": {
+        "1": { "name": "keyword.tag.dat" },
+        "2": { "name": "meta.value.dat" }
+      },
+      "name": "meta.assignment.dat"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "name": "dat-extension-vscode",
+  "displayName": "DAT Extension for VSCode",
+  "description": "VSCode extension to format and highlight .dat files.",
+  "version": "0.0.1",
+  "publisher": "Gillian Palhano",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onLanguage:dat"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "dat",
+        "aliases": [
+          "dat",
+          "DAT"
+        ],
+        "extensions": [
+          ".dat"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "dat",
+        "scopeName": "source.dat",
+        "path": "./syntaxes/dat.tmLanguage.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.8",
+    "@types/vscode": "^1.90.0",
+    "vscode": "^1.1.37"
+  },
+  "dependencies": {
+  }
+}
