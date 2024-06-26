@@ -11,7 +11,7 @@ This Visual Studio Code extension provides syntax highlighting and formatting fo
 
 ## Installation
 
-1. Download the `.vsix` file from the [releases page](#).
+1. Download the `.vsix` file from the [releases page](https://github.com/gillianpalhano/dat-extension-vscode/releases).
 2. In Visual Studio Code, open the Command Palette (Ctrl+Shift+P) and select `Extensions: Install from VSIX...`.
 3. Select the downloaded `.vsix` file to install the extension.
 
@@ -29,9 +29,10 @@ This Visual Studio Code extension provides syntax highlighting and formatting fo
 
 Here is an example of a `.dat` file with syntax highlighting and formatting:
 
-```
-VAR
-  MYVAR1= value
-  MYVAR2= value
-  MYVAR3= value
-```
+
+<pre>
+<span style="color: purple;">VARDAT</span>
+<span style="color: #0000AA;">  MYVAR1= </span><span style="color: default;">value</span>
+<span style="color: #0000AA;">  MYVAR2= </span><span style="color: default;">value</span>
+<span style="color: #0000AA;">  MYVAR3= </span><span style="color: default;">value</span>
+</pre>

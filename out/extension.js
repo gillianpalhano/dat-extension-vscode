@@ -36,7 +36,7 @@ function activate(context) {
             // Encontra o comprimento máximo da chave
             let maxKeyLength = 0;
             lines.forEach(line => {
-                const match = line.match(/^\s*([A-Z_\-]+)\s*=\s*(.*)$/);
+                const match = line.match(/^\s*([A-Za-z0-9_\-]+)\s*=\s*(.*)$/);
                 if (match) {
                     const key = match[1].trim();
                     if (key.length > maxKeyLength) {
@@ -46,7 +46,7 @@ function activate(context) {
             });
             // Aplica a formatação com base no comprimento máximo da chave
             lines.forEach((line, index) => {
-                const match = line.match(/^\s*([A-Z_\-]+)\s*=\s*(.*)$/);
+                const match = line.match(/^\s*([A-Za-z0-9_\-]+)\s*=\s*(.*)$/);
                 if (match) {
                     const key = match[1].trim();
                     const value = match[2].trim();
