@@ -17,6 +17,10 @@
         "2": { "name": "meta.value.dat" }
       },
       "name": "meta.assignment.dat"
+    },
+    {
+      "match": "^\\s*;.*$",
+      "name": "comment.line.semicolon.dat"
     }
   ]
 }
