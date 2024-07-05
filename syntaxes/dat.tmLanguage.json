@@ -21,6 +21,13 @@
     {
       "match": "^\\s*;.*$",
       "name": "comment.line.semicolon.dat"
-    }
+    },
+    {
+			"match": "^\\s*(#\\s*include)\\s+(.+)$",
+			"captures": {
+				"1": { "name": "keyword.directive.include.dat" },
+				"2": { "name": "string.include.path.dat" }
+			}
+		}
   ]
 }
