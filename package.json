@@ -2,7 +2,7 @@
   "name": "dat-extension-vscode",
   "displayName": "DAT Extension for VSCode",
   "description": "VSCode extension to format and highlight .dat files.",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "publisher": "Gillian Palhano",
   "engines": {
     "vscode": "^1.90.0"
